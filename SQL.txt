@@ -1,5 +1,0 @@
-SELECT category.name, product_category.id_product as product,
-GROUP_CONCAT(product.name) FROM category 
-INNER JOIN product_category ON category_id = product_category.id_category 
-LEFT JOIN product ON product_category.id_product = product_id 
-GROUP BY category.name
